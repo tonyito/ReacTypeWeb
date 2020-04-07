@@ -1,0 +1,242 @@
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+#fullCarousel {
+  /* opacity: 0.1; */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #5b247a 0%, #1bcedf 100%);
+}
+
+.flex-container > div {
+  /* background-color: #f1f1f1; */
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+/* ********************************* */
+/* NAVIGATION */
+/* ********************************* */
+
+.nav-logo-text {
+  opacity: 1;
+}
+
+.nav-logo-text:hover {
+  opacity: 0.8;
+}
+
+.nav-icon {
+  height: 2rem;
+  width: 2rem;
+  opacity: 0.5;
+  position: fixed;
+  right: 0px;
+  margin-right: 25px;
+}
+
+.nav-icon:hover {
+  opacity: 1;
+}
+
+/* .nav-item-text {
+    text-align: end;
+  } */
+
+#leftNav {
+  position: relative;
+}
+
+/* #download-link {
+    float: left;
+    left: 0px;
+  } */
+
+/* #meet {
+    float: right;
+    right: 100px;
+  } */
+
+/* ********************************* */
+/* DOWNLOAD */
+/* ********************************* */
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(188, 184, 184);
+  background-image: linear-gradient(
+    70deg,
+    rgb(188, 184, 184) 20%,
+    #1bcedf 100%
+  );
+  padding: 8rem 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.btn-primary:not(:last-child) {
+  margin-right: 2rem;
+}
+
+/* ********************************* */
+/* TEAM */
+/* ********************************* */
+
+.team-div {
+  background-color: rgb(188, 184, 184);
+  /* background-color: rgb(208, 20, 73); */
+  /* background-image: linear-gradient(140deg, rgb(188, 184, 184) 20%, #1bcedf 70%); */
+  background-image: linear-gradient(35deg, #5b247a 0%, #1bcedf 100%);
+}
+
+.team-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  /* background-color: rgb(188, 184, 184); */
+  /* background-color: rgb(208, 20, 73); */
+  /* background-image: linear-gradient(140deg, rgb(188, 184, 184) 20%, #1bcedf 70%); */
+}
+
+/* .team-name {
+    justify-content: center;
+    align-items: center;
+  } */
+
+.team {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+    align-items: center; */
+  /* padding: 4rem 0; */
+  /* background-color: rgb(209, 208, 208) */
+  /* background-color: rgb(100, 158, 229); */
+  /* background-color: rgb(208, 20, 73); */
+  /* background-image: linear-gradient(35deg, #5b247a 0%, #1bcedf 100%); */
+}
+
+.team-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-image {
+  width: 30rem;
+  /* background-color: green; */
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-images {
+  width: 13rem;
+  height: 14rem;
+  border-radius: 70%;
+  /* background-size: cover; */
+  background-position: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-links {
+  opacity: 0.5;
+  border: 100px white;
+}
+
+.team-links:hover {
+  opacity: 1;
+}
+
+/* ********************************* */
+/* KEYFRAMES */
+/* ********************************* */
+
+.download-button {
+  /* flex-direction: row; */
+  margin: auto;
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+  .team-profiles {
+    flex-direction: column;
+  }
+
+  /* for cell phones  */
+  /* [class*="col-"] {
+      width: 100%;
+    } */
+
+  .nav-item-text {
+    display: none;
+  }
+
+  .nav-icon {
+    /* height: 24px;
+      width: 24px; */
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .team-div {
+    text-align: center;
+  }
+
+  .download-button {
+    /* flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+    /* display: table-column-group; */
+    /* position: relative; */
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-logo-text {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    /* text-align: center; */
+  }
+
+  /* .team-profile:not(:last-child) {
+      margin-bottom: 2rem;
+    } */
+}
+
+/* @media screen and (max-width: 450px) {
+
+    .nav-item:not(:last-child) {
+      padding-right: 1rem;
+    }
+
+    .nav-item-text {
+      display: none;
+    } */
+
+/* .download {
+      display: none;
+    } */
+
+/* } */
