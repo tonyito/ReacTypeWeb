@@ -3634,6 +3634,14 @@ body.landing #header {
   /* background-image: url('../../images/banner.jpg'); */
   background-position: center center;
   background-size: cover;
+  background-image: -webkit-gradient(
+    linear,
+    lefttop,
+    right bottom,
+    from(#27283338),
+    to(#b1b1b141)
+  );
+  overflow: hidden;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
   min-height: 100vh;
   position: relative;
