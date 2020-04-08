@@ -4388,6 +4388,10 @@ body.is-touch #banner {
   }
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .fab {
   color: rgba(255, 255, 255, 0.632);
   text-decoration: none;
