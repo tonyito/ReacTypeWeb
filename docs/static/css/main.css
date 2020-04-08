@@ -195,11 +195,49 @@ textarea {
   line-height: 1.75em;
 }
 
+/*  HIDE CANVAS FROM PARTICLE */
+body > div:nth-child(5) > canvas:nth-child(1) {
+  display: none !important;
+}
+
 /* LOGO */
 .logo-main {
-  height: 80px;
-  width: 80px;
-  margin-top: 5px;
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(51, 235, 145, 0.4);
+  animation: pulse 4s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 5px 0 0 rgba(51, 235, 145, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 5px 0 20px rgba(51, 235, 145, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 5px 0 0 rgba(51, 235, 145, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 5px 0 0 rgba(51, 235, 145, 0.4);
+    box-shadow: 0 5px 0 0 rgba(51, 235, 145, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 5px 0 20px rgba(51, 235, 145, 0);
+    box-shadow: 0 5px 0 20px rgba(51, 235, 145, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 5px 0 0 rgba(51, 235, 145, 0);
+    box-shadow: 0 5px 0 0 rgba(51, 235, 145, 0);
+  }
 }
 
 a {
@@ -256,7 +294,8 @@ h6 a {
 
 /* "Prototype React Better" */
 #big-title {
-  font-size: 3em;
+  font-size: 5em;
+  font-weight: 900;
   line-height: 2em;
   letter-spacing: 0.25em;
   text-align: center;
@@ -267,6 +306,7 @@ h6 a {
     #3dc2ac 60%,
     #fff 80%
   );
+  margin-top: -8rem;
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -3657,8 +3697,13 @@ body.landing #header {
   width: 1%;
 }
 
+/* Particles on screen */
+.particles-js-canvas-el {
+  margin-top: -40rem;
+}
+
 #banner:after {
-  background-image: -moz-linear-gradient(
+  /* background-image: -moz-linear-gradient(
       top,
       rgba(23, 24, 32, 0.95),
       rgba(23, 24, 32, 0.95)
@@ -3681,7 +3726,7 @@ body.landing #header {
       rgba(23, 24, 32, 0.95),
       rgba(23, 24, 32, 0.95)
     ),
-    url('images/overlay.png');
+    url('images/overlay.png'); */
   content: '';
   display: block;
   height: 100%;
