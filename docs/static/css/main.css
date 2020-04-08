@@ -3130,6 +3130,10 @@ input[type='button']:disabled,
   opacity: 0.25;
 }
 
+#tree-btn {
+  margin-left: 70%;
+}
+
 /* Goto Next */
 
 .goto-next {
@@ -4382,4 +4386,23 @@ body.is-touch #banner {
     margin: 0;
     padding: 0;
   }
+}
+
+.fab {
+  color: rgba(255, 255, 255, 0.632);
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.fab:hover {
+  color: #fff;
+}
+
+.git-btn {
+  color: #fff;
+  text-decoration: none;
+}
+
+.git-btn:hover {
+  color: #fff;
 }
