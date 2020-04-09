@@ -31,8 +31,10 @@
             <li><a href="#six">Meet Us!</a></li>
             <li>
               <a
-                href="https://github.com/oslabs-beta/ReacType/tree/stretch"
+                href="#"
                 class="button primary"
+                id="download"
+                onclick="operatingSytem()"
                 >Download</a
               >
             </li>
@@ -306,9 +308,6 @@
                   src="./static/ReacType/profile-pics/smiling-sml.png"
                 />
                 <h3>Eliot Nguyen</h3>
-                <p>
-                  Real Time Real Timer, real timing
-                </p>
                 <div>
                   <a class="git-btn" href="http://www.github.com/ibeeliot"
                     ><i class="fab fa-github fa-2x"></i
@@ -324,9 +323,6 @@
                   src="./static/ReacType/profile-pics/tony-ito.png"
                 />
                 <h3>Tony Ito-Cole</h3>
-                <p>
-                  Once Doctor. Now Super Coder.
-                </p>
                 <div>
                   <a class="git-btn" href="http://www.github.com/tonyito"
                     ><i class="fab fa-github fa-2x"></i
@@ -342,9 +338,6 @@
                   src="./static/ReacType/profile-pics/sean-sadykoff.png"
                 />
                 <h3>Sean Sadykoff</h3>
-                <p>
-                  Russian fighter. Gentle coder.
-                </p>
                 <div>
                   <a class="git-btn" href="http://www.github.com/sean1292"
                     ><i class="fab fa-github fa-2x"></i
@@ -361,9 +354,6 @@
                   src="./static/ReacType/profile-pics/jesse-temp.png"
                 />
                 <h3>Jesse Zuniga</h3>
-                <p>
-                  Cut from a sturdier cloth.
-                </p>
                 <div>
                   <a class="git-btn" href="http://www.github.com/jzuniga206"
                     ><i class="fab fa-github fa-2x"></i
@@ -650,5 +640,25 @@
     <script src="./static/js/breakpoints.min.js"></script>
     <script src="./static/js/util.js"></script>
     <script src="./static/js/main.js"></script>
+    <script>
+      function operatingSytem() {
+        var link = "https://github.com/oslabs-beta/ReacType/releases";
+        if (navigator.appVersion.indexOf("Win") != -1)
+          link =
+            "https://github.com/oslabs-beta/ReacType/releases/tag/Windows.2.0.0";
+        if (navigator.appVersion.indexOf("Mac") != -1)
+          link =
+            "https://github.com/oslabs-beta/ReacType/releases/tag/Mac.2.0.0";
+        if (navigator.appVersion.indexOf("Linux") != -1)
+          link =
+            "https://github.com/oslabs-beta/ReacType/releases/tag/Linux.2.0.0";
+        console.log(link);
+        // Display the OS name
+        let download = document.getElementById("download");
+        download.href = link;
+        window.open(download.href);
+        return false;
+      }
+    </script>
   </body>
 </html>
